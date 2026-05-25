@@ -1,0 +1,48 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Virtual env ───────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Data (potentially proprietary — keep out of public repo) ──────────────────
+mm/data/
+data/
+
+# ── Backtest / optimisation outputs ───────────────────────────────────────────
+results_backtest/
+results_optimizer/
+logs/
+*.log
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── C++ build artefacts (for qb/src) ──────────────────────────────────────────
+build/
+*.o
+*.obj
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Note: the precompiled qb/*.so files ARE committed intentionally so users
+# don't need to build C++. To rebuild, see qb/src/tracker_pybind*.sh.
+
+# ── OS / IDE ──────────────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Local notes (not for public repo) ────────────────────────────────────────
+NOTES.md
